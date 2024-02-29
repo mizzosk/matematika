@@ -136,7 +136,32 @@ div{
 
   
   
-@media (orientation: portrait) {
+@media (max-width: 767px) and (orientation: portrait) {
+  .number{
+    height:4rem;
+    font-size: 4rem;
+  }
+
+  .calculator-number{
+    height:6.5rem;
+    width:6.5rem;
+    font-size: 6rem;
+  }
+  .header-container {
+    font-size: 6rem;
+}
+
+h2{
+  font-size:4.5rem;
+}
+
+.actions{
+  height:3.5rem;
+  width:3.5rem;
+}
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
   .number{
     height:3rem;
     font-size: 3rem;
