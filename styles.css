@@ -136,7 +136,7 @@ div{
 
   
 /* mobiles */
-@media (max-aspect-ratio: 9/16) and (orientation: portrait) {
+@media (max-aspect-ratio: 9/15) and (orientation: portrait) {
   .number{
     height:5rem;
     font-size: 5rem;
@@ -162,7 +162,7 @@ h2{
 
 }
 /* tablets */
-@media (min-aspect-ratio: 9/15.99) and (orientation: portrait) {
+@media (min-aspect-ratio: 9/14.99) and (orientation: portrait) {
   .number{
     height:3rem;
     font-size: 3rem;
