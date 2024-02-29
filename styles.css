@@ -135,8 +135,34 @@ div{
 }
 
   
-  
-@media (max-width: 767px) and (orientation: portrait) {
+/* mobiles */
+@media (max-aspect-ratio: 9/16) and (orientation: portrait) {
+
+.number{
+  height:3rem;
+  font-size: 3rem;
+}
+
+.calculator-number{
+  height:5rem;
+  width:5rem;
+  font-size: 4.5rem;
+}
+.header-container {
+  font-size: 5rem;
+}
+
+h2{
+font-size:3.5rem;
+}
+
+.actions{
+height:2.5rem;
+width:2.5rem;
+}
+}
+/* tablets */
+@media (min-aspect-ratio: 9/15.99) and (orientation: portrait) {
   .number{
     height:4rem;
     font-size: 4rem;
@@ -158,31 +184,6 @@ h2{
 .actions{
   height:3.5rem;
   width:3.5rem;
-}
-}
-
-@media (min-width: 768px) and (orientation: portrait) {
-  .number{
-    height:3rem;
-    font-size: 3rem;
-  }
-
-  .calculator-number{
-    height:5rem;
-    width:5rem;
-    font-size: 4.5rem;
-  }
-  .header-container {
-    font-size: 5rem;
-}
-
-h2{
-  font-size:3.5rem;
-}
-
-.actions{
-  height:2.5rem;
-  width:2.5rem;
 }
 }
   
