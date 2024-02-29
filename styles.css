@@ -138,14 +138,14 @@ div{
 /* mobiles */
 @media (max-aspect-ratio: 9/16) and (orientation: portrait) {
   .number{
-    height:4rem;
-    font-size: 4rem;
+    height:5rem;
+    font-size: 5rem;
   }
 
   .calculator-number{
-    height:8rem;
-    width:8rem;
-    font-size: 7.5rem;
+    height:9rem;
+    width:9rem;
+    font-size: 8.5rem;
   }
   .header-container {
     font-size: 6rem;
@@ -156,8 +156,8 @@ h2{
 }
 
 .actions{
-  height:3.5rem;
-  width:3.5rem;
+  height:5.5rem;
+  width:5.5rem;
 }
 
 }

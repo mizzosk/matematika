@@ -62,7 +62,6 @@ $("#ok").on("click",function(){
     if(resultNumber === result){
         correctCounter++;
         if(correctCounter ===10){
-            console.log("allgood");
             $("div").hide();
             $("h2").html("GRATULUJEM!!! <BR> <BR> 10 PRÍKLADOV SPRÁVNE VYRIEŠENÝCH <BR><BR> POČET CHÝB: " + incorrectCounter);
             $("h2").show();
@@ -77,8 +76,7 @@ $("#ok").on("click",function(){
             }, 300);}
     }else{
         incorrectCounter++;
-        console.log(incorrectCounter);
-        $(".grid-container").css("backgroundColor", "red")
+        $(".grid-container").css("backgroundColor", "rgb(210, 69, 69)")
         setTimeout(function() {
             $(".grid-container").css("backgroundColor", "rgb(180, 121, 130)");
             $("#result").text("");
