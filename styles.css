@@ -8,8 +8,8 @@ body {
     text-align: center;
     background-color: #944E63;
     color: #FFE7E7;
-    font-family: monospace,"Space Mono";
-    font-weight: 600;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
     font-style: normal;
   
   }
@@ -138,17 +138,17 @@ div{
   
 @media (orientation: portrait) {
   .number{
-    height:4rem;
-    font-size: 4rem;
+    height:3rem;
+    font-size: 3rem;
   }
 
   .calculator-number{
-    height:5.5rem;
-    width:5.5rem;
-    font-size: 5rem;
+    height:5rem;
+    width:5rem;
+    font-size: 4.5rem;
   }
   .header-container {
-    font-size: 5.5rem;
+    font-size: 5rem;
 }
 
 h2{
@@ -156,8 +156,8 @@ h2{
 }
 
 .actions{
-  height:3.5rem;
-  width:3.5rem;
+  height:2.5rem;
+  width:2.5rem;
 }
 }
   
