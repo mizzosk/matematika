@@ -149,6 +149,7 @@ div{
   }
   .header-container {
     font-size: 6rem;
+    margin: 3vh;
 }
 
 h2{
@@ -175,6 +176,7 @@ h2{
   }
   .header-container {
     font-size: 5rem;
+    margin: 3vh;
   }
   
   h2{
