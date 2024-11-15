@@ -17,8 +17,8 @@ function getSelectedValueRepeat() {
     localStorage.setItem('repeat', repeat); // Save to localStorage
   }
   
-  // Example usage
-  document.getElementById('start-game').addEventListener('click', () => {
+  // GET THE RADIO BUTTONS VALUES AND PASS THEM TO GAME WEBPAGE
+  $(".start-game-button").on("click",function(){
     getSelectedValueOdDo();
     getSelectedValueSign();
     getSelectedValueRepeat();
