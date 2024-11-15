@@ -1,4 +1,5 @@
 var result = 0;
+var counter = 0;
 var correctCounter = 0;
 var incorrectCounter = 0;
 
@@ -53,7 +54,7 @@ if (sign === 'plus_minus') {
 
 //hide h2 game reuslts
 $("h2").hide();
-$("#new-game").hide();
+$(".vysledok").hide();
 
 
 //calculator button
@@ -76,15 +77,18 @@ $("#delete").on("click",function(){
 
 //verify results
 $("#ok").on("click",function(){
+    counter++
     var resultNumber = parseInt($("#result").text(), 10);
     if(resultNumber === result){
         correctCounter++;
-        if(correctCounter === repeat){
+
+        if(counter === repeat){
             $("div").hide();
-            $("h2").html("GRATULUJEM!!! <BR> <BR>" + correctCounter + " PRÍKLADOV SPRÁVNE VYRIEŠENÝCH <BR><BR> POČET CHÝB: " + incorrectCounter);
-            $("h2").show();
-            $("#new-game").show();
-        ;}else{
+            $("#vysledok1").html(correctCounter);
+            $("#vysledok2").html(incorrectCounter);
+            $("#vysledok-container").show();
+            $(".vysledok").show();
+        }else{
             console.log(correctCounter);
             $(".grid-container").css("backgroundColor", "rgb(165, 221, 155)")
             setTimeout(function() {
@@ -101,15 +105,26 @@ $("#ok").on("click",function(){
         $(this).fadeToggle(100).fadeToggle(100);
     }else{
         incorrectCounter++;
-        $(".grid-container").css("backgroundColor", "rgb(210, 69, 69)")
-        setTimeout(function() {
-            $(".grid-container").css("backgroundColor", "rgb(180, 121, 130)");
-            $("#result").text("");
-        }, 300);
-    }
+
+        if(counter === repeat){
+            $("div").hide();
+            $("#vysledok1").html(correctCounter);
+            $("#vysledok2").html(incorrectCounter);
+            $("#vysledok-container").show();
+            $(".vysledok").show();
+        }else{
+            $(".grid-container").css("backgroundColor", "rgb(210, 69, 69)")
+            setTimeout(function() {
+                $(".grid-container").css("backgroundColor", "rgb(180, 121, 130)");
+                $("#result").text("");
+            }, 300);
+        }
+        }
+    console.log(counter);
 });
 
 // Reload the webpage when a button with the id "reloadButton" is clicked
-$("#new-game").on("click", function() {
-    window.location.href = '../index.html'; // Redirect to subpage
+$(".new-game-button").on("click", function() {
+    window.location.href = './index.html'; // Redirect to subpage
 });
+

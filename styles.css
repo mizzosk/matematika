@@ -22,20 +22,24 @@ body {
     gap: 20px; /* Space between columns */
 }
 
+
+
 .column{
     display: flex;
+    align-items: left;
     text-align: left;
+    padding-left: 3rem;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 2rem;
     flex-direction: column;
     gap: 10px; /* Space between radio buttons */
 }
 
 label {
     display: flex;
-    align-items: center;
+    align-items: left;
     font-weight: 400;
-    gap: 5px; /* Space between radio button and text */
+    gap: 20px; /* Space between radio button and text */
 }
 
 .start-game-button-highlight {
@@ -172,15 +176,64 @@ div{
 
 }
 
-#new-game{
-  background-color: rgb(180, 121, 130);
-  border-radius:15%;
-  padding: 1rem;
-  font-size:2.5rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
 
+#vysledok1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:4rem;
+  width:4rem;
+  font-size:2.5rem;
+  background-color: rgb(71, 166, 55);
+  border-radius:5%;
+  padding:1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+#vysledok2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:4rem;
+  width:4rem;
+  font-size:2.5rem;
+  background-color: rgba(249, 0, 0, 0.5);
+  border-radius:5%;
+  padding:1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Box shadow property */ 
+}
+
+.vysledok-container {
+  display: grid;
+  margin: 4rem;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */ 
+  grid-template-rows: auto auto; /* Two rows */ 
+  gap: 10px; /* Gap between grid items */
+  border-radius:5%;
+  padding:3%;
+  background-color: #B47B84;
+  place-items: center;
+  font-size:1.5rem;
+}
+
+
+.new-game-button {
+  display: flex;
+  height:6rem;
+  width:6rem;
+  margin:2rem;
+  background-color: #B47B84;
+  border-radius:20%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding:1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+
+
+
+
 
   
 /* mobiles */
@@ -207,6 +260,11 @@ h2{
 .actions{
   height:5.5rem;
   width:5.5rem;
+}
+.radio-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout */ 
+  gap: 40px; /* Space between the grid items */
 }
 
 }
@@ -235,6 +293,12 @@ h2{
   height:2.5rem;
   width:2.5rem;
   }
+  .radio-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */ 
+    gap: 40px; /* Space between the grid items */
+}
+
 }
   
   
