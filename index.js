@@ -22,5 +22,4 @@ function getSelectedValueRepeat() {
     getSelectedValueOdDo();
     getSelectedValueSign();
     getSelectedValueRepeat();
-    window.location.href = '/matematika.html'; // Redirect to subpage
   });

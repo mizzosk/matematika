@@ -42,29 +42,21 @@ label {
     gap: 20px; /* Space between radio button and text */
 }
 
-.start-game-button-highlight {
-  border-radius:50%;
-  padding:0.1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  background-color: rgb(131, 219, 115);
-}
+
 
 .start-game-button {
   display: flex;
-  height:4rem;
-  width:4rem;
+  height:12rem;
+  width:12rem;
+  margin:2rem;
   background-color: #B47B84;
-  border-radius:50%;
+  border-radius:20%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   padding:1.5rem;
   cursor: pointer;
   transition: background-color 0.3s; /* Smooth transition */
 }
 
-
-.start-game-button:hover {
-  background-color: rgb(131, 219, 115); /* Green background color on hover */
-}
 
   
 footer {
@@ -181,9 +173,9 @@ div{
   display: flex;
   align-items: center;
   justify-content: center;
-  height:4rem;
-  width:4rem;
-  font-size:2.5rem;
+  height:9rem;
+  width:9rem;
+  font-size:6rem;
   background-color: rgb(71, 166, 55);
   border-radius:5%;
   padding:1rem;
@@ -194,9 +186,9 @@ div{
   display: flex;
   align-items: center;
   justify-content: center;
-  height:4rem;
-  width:4rem;
-  font-size:2.5rem;
+  height:9rem;
+  width:9rem;
+  font-size:6rem;
   background-color: rgba(249, 0, 0, 0.5);
   border-radius:5%;
   padding:1rem;
@@ -213,14 +205,14 @@ div{
   padding:3%;
   background-color: #B47B84;
   place-items: center;
-  font-size:1.5rem;
+  font-size:2.5rem;
 }
 
 
 .new-game-button {
   display: flex;
-  height:6rem;
-  width:6rem;
+  height:12rem;
+  width:12rem;
   margin:2rem;
   background-color: #B47B84;
   border-radius:20%;

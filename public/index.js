@@ -123,8 +123,3 @@ $("#ok").on("click",function(){
     console.log(counter);
 });
 
-// Reload the webpage when a button with the id "reloadButton" is clicked
-$(".new-game-button").on("click", function() {
-    window.location.href = './index.html'; // Redirect to subpage
-});
-
