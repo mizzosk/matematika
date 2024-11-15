@@ -14,6 +14,54 @@ body {
   
   }
   
+
+
+
+.radio-grid {
+    display: flex;
+    gap: 20px; /* Space between columns */
+}
+
+.column{
+    display: flex;
+    text-align: left;
+    font-weight: 800;
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 10px; /* Space between radio buttons */
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    gap: 5px; /* Space between radio button and text */
+}
+
+.start-game-button-highlight {
+  border-radius:50%;
+  padding:0.1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: rgb(131, 219, 115);
+}
+
+.start-game-button {
+  display: flex;
+  height:4rem;
+  width:4rem;
+  background-color: #B47B84;
+  border-radius:50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding:1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+
+.start-game-button:hover {
+  background-color: rgb(131, 219, 115); /* Green background color on hover */
+}
+
   
 footer {
     display: flex;
